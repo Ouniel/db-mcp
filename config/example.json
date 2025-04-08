@@ -1,0 +1,97 @@
+{
+    "servers": {
+        "multi_db": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "mysql://user:password@localhost:3306/dbname",
+                "--dsn",
+                "postgres://user:password@localhost:5432/dbname",
+                "--dsn",
+                "sqlite:///path/to/database.db",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "multi_db_with_mongo": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "mysql://user:password@localhost:3306/dbname",
+                "--dsn",
+                "mongodb://user:password@localhost:27017/dbname",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "db_demo": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--demo",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "db_mysql": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "mysql://user:password@localhost:3306/dbname",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "db_postgres": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "postgres://user:password@localhost:5432/dbname?sslmode=disable",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "db_sqlite": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "sqlite:///path/to/database.db",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "db_sqlserver": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "sqlserver://user:password@localhost:1433/dbname",
+                "--transport",
+                "stdio"
+            ]
+        },
+        "db_mongodb": {
+            "command": "python",
+            "args": [
+                "-m",
+                "db_mcp.server.main",
+                "--dsn",
+                "mongodb://user:password@localhost:27017/dbname",
+                "--transport",
+                "stdio"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+mcp>=0.1.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+httpx>=0.24.0
+aiomysql>=0.1.1
+asyncpg>=0.27.0
+aiosqlite>=0.18.0
+pyodbc>=4.0.39
+aioodbc>=0.4.0
+motor>=3.3.0 
