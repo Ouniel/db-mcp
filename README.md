@@ -61,7 +61,7 @@ graph LR
 ### 快速安装
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourusername/db-mcp.git
+git clone https://github.com/Ouniel/db-mcp.git
 cd db-mcp
 
 # 2. 安装依赖
